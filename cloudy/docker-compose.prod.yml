@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  cloudy-prod:
+    container_name: cloudy-prod
+    build:
+      context: ./app
+      dockerfile: dockerfile.prod
+    ports:
+      - 1337:80
